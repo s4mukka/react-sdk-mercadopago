@@ -7,9 +7,13 @@
   "scripts": {
     "build": "tsc -p ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["react", "sdk", "mercadopago", "v1"],
+  "author": "s4mukka",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s4mukka/react-sdk-mercadopago/issues"
+  },
+  "homepage": "https://github.com/s4mukka/react-sdk-mercadopago#readme",
   "devDependencies": {
     "typescript": "^4.2.4"
   }
