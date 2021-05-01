@@ -8,6 +8,7 @@ npm install --save react-sdk-mercadopago
 
 ## Usage
 ```js
+import React from 'react';
 import { useMercadopago } from 'react-sdk-mercadopago';
 
 export default function Checkout() {
