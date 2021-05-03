@@ -5,10 +5,10 @@ export type GetPaymentMethod = (
         bin: string
         payment_method_id?: string
     },
-    callback: Callback
-) => Callback
+    callback: CallbackGetPaymentMethod
+) => CallbackGetPaymentMethod
 
-type Callback = (status: number, response: {
+export type CallbackGetPaymentMethod = (status: number, response: {
     accreditation_time: number
     additional_info_needed: string[]
     deferred_capture: string
