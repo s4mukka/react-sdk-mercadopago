@@ -31,3 +31,14 @@ export type Mercadopago = {
     validateLuhn: (e: any) => boolean
     validateSecurityCode: (e: any, t: any, n: Function) => any
 }
+
+export type MercadoPago = {
+    cardForm: (e: any) => any
+    checkout: (e: any) => any
+    constructor: (key: string, options: { locale: string }) => any
+    createCardToken: (e: any, t: any) => Promise<any>
+    getIdentificationTypes: () => Promise<any>
+    getInstallments: (e: any) => Promise<any>
+    getIssuers: (e: any) => Promise<any>
+    getPaymentMethods: (e: any) => Promise<any>
+}
