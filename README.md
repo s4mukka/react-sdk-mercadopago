@@ -34,16 +34,18 @@ export default function Checkout() {
     });
 
     useEffect(() => {
-        mercadopago.checkout({
-            preference: {
-                id: 'YOUR_PREFERENCE_ID'
-            },
-            render: {
-                container: '.cho-container',
-                label: 'Pay',
-            }
-        })
-    }, [])
+        if (mercadopago) {
+            mercadopago.checkout({
+                preference: {
+                    id: 'YOUR_PREFERENCE_ID'
+                },
+                render: {
+                    container: '.cho-container',
+                    label: 'Pay',
+                }
+            })
+        }
+    }, [mercadopago])
 
     return (
         <div>
