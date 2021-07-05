@@ -24,7 +24,7 @@ const useMercadopago = (publicKey: string) => {
         document.body.appendChild(script)
 
         return () => {
-            let iframe = document.querySelector('iframe')
+            let iframe = document.body.querySelector('iframe[src*="mercadolibre"]')
 
             if (iframe) {
                 document.body.removeChild(iframe)
