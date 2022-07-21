@@ -7,7 +7,12 @@
   "scripts": {
     "build": "tsc -p ."
   },
-  "keywords": ["react", "sdk", "mercadopago", "v1"],
+  "keywords": [
+    "react",
+    "sdk",
+    "mercadopago",
+    "v1"
+  ],
   "author": "s4mukka",
   "license": "ISC",
   "bugs": {

@@ -33,6 +33,7 @@ export type Mercadopago = {
 }
 
 export type MercadoPago = {
+    bricks: () => any
     cardForm: (e: any) => any
     checkout: (e: any) => any
     constructor: (key: string, options: { locale: string }) => any
