@@ -5,9 +5,15 @@
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "postinstall": "npm run build"
   },
-  "keywords": ["react", "sdk", "mercadopago", "v1"],
+  "keywords": [
+    "react",
+    "sdk",
+    "mercadopago",
+    "v1"
+  ],
   "author": "s4mukka",
   "license": "ISC",
   "bugs": {
