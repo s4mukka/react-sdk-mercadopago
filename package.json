@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/s4mukka/react-sdk-mercadopago#readme",
   "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^4.2.4"
   }
 }
