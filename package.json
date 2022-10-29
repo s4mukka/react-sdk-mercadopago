@@ -20,6 +20,10 @@
     "url": "https://github.com/s4mukka/react-sdk-mercadopago/issues"
   },
   "homepage": "https://github.com/s4mukka/react-sdk-mercadopago#readme",
+  "peerDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8"
+  },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
