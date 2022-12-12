@@ -49,7 +49,7 @@ export default function Checkout() {
 
     return (
         <div>
-            <div class="cho-container" />
+            <div className="cho-container" />
         </div>
     )
 }
