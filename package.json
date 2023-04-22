@@ -5,16 +5,30 @@
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "prepare": "npm run build"
   },
-  "keywords": ["react", "sdk", "mercadopago", "v1"],
+  "keywords": [
+    "react",
+    "sdk",
+    "mercadopago",
+    "v1"
+  ],
   "author": "s4mukka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/s4mukka/react-sdk-mercadopago/issues"
   },
   "homepage": "https://github.com/s4mukka/react-sdk-mercadopago#readme",
+  "peerDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8"
+  },
   "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^4.2.4"
   }
 }
