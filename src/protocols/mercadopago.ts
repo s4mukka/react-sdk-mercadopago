@@ -1,4 +1,9 @@
-import { GetPaymentMethod } from './getPaymentMethod';
+import { GetPaymentMethod, PaymentMethodsParams, PaymentMethodsResponse } from './getPaymentMethod';
+import { IssuersParams, IssuersResponse } from './getIssuers'
+import { InstallmentsParams, InstallmentsResponse } from './getInstallments';
+import { IdentificationTypesResponse } from './getIdentificationTypes';
+import { CardTokenParams, CardTokenResponse } from './createCardToken';
+import { CheckoutParams } from './checkout';
 
 export type Mercadopago = {
     deviceProfileId: string
@@ -35,11 +40,11 @@ export type Mercadopago = {
 export type MercadoPago = {
     bricks: () => any
     cardForm: (e: any) => any
-    checkout: (e: any) => any
+    checkout: (params: CheckoutParams) => any
     constructor: (key: string, options: { locale: string }) => any
-    createCardToken: (e: any, t: any) => Promise<any>
-    getIdentificationTypes: () => Promise<any>
-    getInstallments: (e: any) => Promise<any>
-    getIssuers: (e: any) => Promise<any>
-    getPaymentMethods: (e: any) => Promise<any>
+    createCardToken: (params: CardTokenParams) => Promise<CardTokenResponse>
+    getIdentificationTypes: () => Promise<IdentificationTypesResponse>
+    getInstallments: (params: InstallmentsParams) => Promise<InstallmentsResponse>
+    getIssuers: (params: IssuersParams) => Promise<IssuersResponse>
+    getPaymentMethods: (params: PaymentMethodsParams) => Promise<PaymentMethodsResponse>
 }
